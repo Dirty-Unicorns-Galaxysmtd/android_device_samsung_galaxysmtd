@@ -22,4 +22,6 @@
     <!-- Hardware buttons enabled or disabled -->
     <bool name="config_has_hardware_buttons">true</bool>
 
+    <!-- Button settings enabled or disabled -->
+    <bool name="config_device_has_button_settings" translatable="false">true</bool>
 </resources>
