@@ -23,9 +23,6 @@ $(call inherit-product, vendor/du/config/gsm.mk)
 # Galaxy S uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
 
-# Inherit Aries-common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/sgs
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
@@ -41,6 +38,10 @@ PRODUCT_DEVICE := galaxysmtd
 PRODUCT_NAME := du_galaxysmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9000
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9000 TARGET_DEVICE=GT-I9000 BUILD_FINGERPRINT=samsung/GT-I9000/GT-I9000:2.3.5/GINGERBREAD/XXJVT:user/release-keys PRIVATE_BUILD_DESC="GT-I9000-user 2.3.5 GINGERBREAD XXJVT release-keys"
