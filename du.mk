@@ -20,6 +20,12 @@
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/du/config/gsm.mk)
 
+# Galaxy S uses high-density artwork where available
+PRODUCT_LOCALES += hdpi
+
+# Inherit Aries-common overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/sgs
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
