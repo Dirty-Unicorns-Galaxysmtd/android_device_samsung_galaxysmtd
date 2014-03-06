@@ -24,4 +24,7 @@
 
     <!-- Button settings enabled or disabled -->
     <bool name="config_device_has_button_settings" translatable="false">true</bool>
+
+    <!-- Whether or not device settings should be displayed or not for the device -->
+    <bool name="has_advanced_settings">true</bool>
 </resources>
