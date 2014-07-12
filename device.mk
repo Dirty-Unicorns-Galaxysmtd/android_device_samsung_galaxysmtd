@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+        vendor/du/bootanimations/bootanimation_480_800.zip:system/media/bootanimation.zip
+
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
 
